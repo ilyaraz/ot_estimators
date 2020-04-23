@@ -4,7 +4,7 @@ This repository contains the implementation of several fast approximate algorith
 
 Authors: [Arturs Backurs](https://www.mit.edu/~backurs/), [Yihe Dong](https://yihedong.me/), [Piotr Indyk](https://people.csail.mit.edu/indyk/), [Ilya Razenshteyn](https://www.ilyaraz.org/), [Tal Wagner](http://www.mit.edu/~talw/).
 
-### Instalation instructions
+### Installation instructions
 
 Start with cloning the repo. **It's really crucial to clone it with all the submodules as follows:**
 
@@ -29,7 +29,7 @@ Then, to build the C++ extension, do the following:
 
 For OS X and Cygwin, the steps are pretty much the same, except that you need to install the dependencies differently, through a combination of `pip3` and `brew` for OS X and the standard package manager for Cygwin. Note that in case of Cygwin, the result of running `make` has extension `.dll` rather than `.so`.
 
-### Downloading a sample dataset
+### Downloading a sample 20news dataset
 
 Download the [archive](https://flowtree.s3-us-west-1.amazonaws.com/20news.tar.gz) and unpack it,
 the result should be a directory called `20news`.
@@ -59,7 +59,7 @@ Example:
 ```
 python3 pipeline.py "./data/20news/" mean-sinkhorn-exact 1000-40-1 9
 ```
-This runs a pipeline that runs on the 20news dataset, and starts with mean narrowing the input dataset down to 1000 candidates, followed by Sinkhorn with 9 interations narrowing further to 40 candidates, ending with exact EMD computation narrowing down to a one candidate.
+This runs a pipeline on the 20news dataset, which starts with mean narrowing the input dataset down to 1000 candidates, followed by Sinkhorn with 9 interations narrowing further to 40 candidates, ending with exact EMD computation narrowing down to a one candidate.
 Output:
 ```
 Nearest neighbors found by pipeline for query 0: [5286]
