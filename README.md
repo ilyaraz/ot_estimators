@@ -4,6 +4,8 @@ This repository contains the implementation of several fast approximate algorith
 
 Authors: [Arturs Backurs](https://www.mit.edu/~backurs/), [Yihe Dong](https://yihedong.me/), [Piotr Indyk](https://people.csail.mit.edu/indyk/), [Ilya Razenshteyn](https://www.ilyaraz.org/), [Tal Wagner](http://www.mit.edu/~talw/).
 
+This code accompanies our [paper](https://arxiv.org/abs/1910.04126) "Scalable Nearest Neighbor Search for Optimal Transport".
+
 ### Installation instructions
 
 Start with cloning the repo. **It's really crucial to clone it with all the submodules as follows:**
